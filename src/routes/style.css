@@ -8,10 +8,12 @@
     pointer-events: none;
     background-color: #7E7F83;
     position: fixed;
+    z-index: 100;
 }
-a:hover ~ cursor {
+a:hover + .cursor {
     width: 30px;
     height: 30px;
+    border-radius: 25%;
 }
 /* First-Section */
 .first-section {

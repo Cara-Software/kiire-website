@@ -1,15 +1,18 @@
-import { $, component$, useOnWindow, useStyles$ } from '@builder.io/qwik';
+import { $, component$, useOnWindow, useStyles$,   } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import styles from "./style.css?inline"
+
+
 export default component$(() => {
   useOnWindow("mousemove", $((event) => {
     const cursor = document.getElementById("cursor") as HTMLElement
 
     cursor.style.transform = `translate(${(event as MouseEvent).x - 10}px, ${(event as MouseEvent).y - 10}px)`;
   }))
+    
   useStyles$(styles)
   return (
-    <div class="container">
+    <div  class="container">
       {/* Mause Cursor */}
       <div class="cursor" id='cursor'>
 
