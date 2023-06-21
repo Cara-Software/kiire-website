@@ -63,3 +63,29 @@ a:hover + .cursor {
         display: none;
     }
 }
+/* third-section (i1) */
+.third-section {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.i1 {
+    z-index: 0;
+    color: white;
+    position: absolute;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    font-size: 200px;
+    align-items: center;
+}
+.i1  p {
+    font-size: large;
+}
+.third-section > .description {
+    width: 30%;
+    position: relative;
+    right: 10%;
+}

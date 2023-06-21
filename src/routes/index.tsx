@@ -90,6 +90,14 @@ export default component$(() => {
         </div>
         <p class="description">Das "k" in unserem Namen steht für kretiv. Wir haben super viele und super gute Ideen, alle zusammen ergeben dann ein Meisterwerk aus Code.</p>
       </div>
+      {/* erstes i erklärt */}
+      <div class="third-section">
+        <div class="i1">
+          i
+          <p>kiire</p>
+        </div>
+        <p class="description">"i" für Innovativ. Unsere Programme basieren auf neusten Technicken, um ein beste User experience zu bieten. Neuste Technicken bedeutet auch immer langlebigkeit, je neuer desto besser.</p>
+      </div>
     </div>
   );
 });
