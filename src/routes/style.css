@@ -1,0 +1,58 @@
+
+/* Maus-Cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: transform 0.1s ease;
+    pointer-events: none;
+    background-color: #7E7F83;
+    position: fixed;
+}
+a:hover ~ cursor {
+    width: 30px;
+    height: 30px;
+}
+/* First-Section */
+.first-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.first-section svg {
+    position: relative;
+    top: 40%;
+}
+/* zweite Section */
+.second-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.k {
+    z-index: 0;
+    color: white;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 200px;
+    align-items: center;
+} 
+.k p {
+    font-size: large;
+}
+.second-section > .description {
+    width: 30%;
+    position: relative;
+    left: 10%;
+    top: 5%;
+}
+@media ( max-width: 800px) {
+    .k  {
+        display: none;
+    }
+}
