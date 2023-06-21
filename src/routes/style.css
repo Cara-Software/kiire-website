@@ -15,6 +15,11 @@ a:hover + .cursor {
     height: 30px;
     border-radius: 25%;
 }
+@media (max-width: 800px) {
+    .cursor {
+        display: none;
+    }
+}
 /* First-Section */
 .first-section {
     height: 100vh;
