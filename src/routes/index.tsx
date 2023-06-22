@@ -81,7 +81,19 @@ export default component$(() => {
 
         
       </div>
-
+      {/* Projekte */}
+      <div class="projekte">
+        <div class="projekteGallery">
+          <div class="headerProjekteGallery">
+            <h2>Mylo-Host</h2>
+          </div>
+          <div class="projektCard">
+            
+            <p>Schaue entweder dich nach deinem besten Hostinganbieter um, der benutze einfach unseren. Beides ist hier möglich.</p>
+            <a href="https://mylo-host.com" target='_blanc'>visit</a>
+          </div>
+        </div>
+      </div>
       {/* k erklärt */}
       <div class="second-section">
         <div class="k">

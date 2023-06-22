@@ -32,6 +32,46 @@ a:hover + .cursor {
     position: relative;
     top: 40%;
 }
+/* Projekte */
+.projekte {
+    background-color: #14110F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projekteGallery {
+    background-color: #34312D;
+    height: 40vh;
+    width: 70vh;
+
+    border-radius: 4px;
+}
+.headerProjekteGallery h2{
+    background-color: #F3F3F4;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    color: #34312D;
+}
+.projektCard {
+    background-color: #34312D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4px;
+    position: relative;
+    padding-left: 4px;
+}
+.projektCard a {
+    background-color: #34312D;
+}
+.projektCard p {
+    background-color: #34312D;
+    text-align: center;
+    color: #F3F3F4;
+}
 /* zweite Section */
 .second-section {
     height: 100vh;
