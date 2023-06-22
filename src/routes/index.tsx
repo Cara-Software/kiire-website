@@ -71,6 +71,7 @@ export default component$(() => {
             d="M14.8284 7.182L16.2426 5.76779L12 1.52515L7.75733 5.76779L9.17155 7.182L12 4.35357L14.8284 7.182Z"
             fill="currentColor"
           />
+          
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -89,7 +90,7 @@ export default component$(() => {
           </div>
           <div class="projektCard">
             
-            <p>Schaue entweder dich nach deinem besten Hostinganbieter um, der benutze einfach unseren. Beides ist hier möglich.</p>
+            <p>Schaue entweder dich nach deinem besten Hostinganbieter um, der benutze einfach unseren. Beides ist hier möglich. Wir bieten ein perfektes Vergleichsportal, mit sehr vielen untereinander verglichenen Hostern an, deren Funktionen als auch deren Kritik- und Lobpunkte. Zu den ganzen von uns bereitgestellte Hostingmöglichkeiten kommen ebenfalls auch noch die möglichkeit Domains zu kaufen und einen super Support bei fragen zu bekommen.</p>
             <a href="https://mylo-host.com" target='_blanc'>visit</a>
           </div>
         </div>
@@ -110,12 +111,21 @@ export default component$(() => {
         </div>
         <p class="description">"i" für Innovativ. Unsere Programme basieren auf neusten Technicken, um ein beste User experience zu bieten. Neuste Technicken bedeutet auch immer langlebigkeit, je neuer desto besser.</p>
       </div>
+      {/* zweites i erklärt */}
+      <div class="fourth-section">
+        <div class="i2">
+          i
+          <p>kiire</p>
+        </div>
+        <p class="description">Das zweite "i" in unserem Namen steht für interactiv. Wir legen einen großen Wert darauf, wie Benutzer mit unserer Software interagieren können, so designen wir unsere Anwendungen immer so schön wie möglich und mit viel Mühe und Liebe.</p>
+      </div>
+      
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'kiire',
+  title: 'kiire | Software Development',
   meta: [
     {
       name: 'description',
