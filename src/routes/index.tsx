@@ -119,7 +119,22 @@ export default component$(() => {
         </div>
         <p class="description">Das zweite "i" in unserem Namen steht für interactiv. Wir legen einen großen Wert darauf, wie Benutzer mit unserer Software interagieren können, so designen wir unsere Anwendungen immer so schön wie möglich und mit viel Mühe und Liebe.</p>
       </div>
-      
+      {/* r erklärt */}
+      <div class="fourth-section">
+        <div class="i2">
+          r
+          <p>kiire</p>
+        </div>
+        <p class="description">Responsiv sind wir zudem auch. Wir legen einen großen Wert auf unsere mobile User, da wir es kennen, wenn man sein Handy nur dabei hat und schnell nach Nachschauen muss. Daher kommt das "r".</p>
+      </div>
+      {/* e erklärt */}
+      <div class="fourth-section">
+        <div class="i2">
+          e
+          <p>kiire</p>
+        </div>
+        <p class="description">Ein "e" wie Effektiv. Also unsere Produkte sind Effektiv, sie erfüllen ihre Aufgaben und können auch manchmal noch was besseres Bieten für unseren Enduser.</p>
+      </div>
     </div>
   );
 });
