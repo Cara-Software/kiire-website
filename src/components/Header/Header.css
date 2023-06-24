@@ -13,14 +13,15 @@
 }
 .HeaderContainer > nav a {
     background-color: #34312D;
-    margin-right: 20px;
+    padding-right: 20px;
+    cursor: pointer;
 }
 .HeaderContainer > nav a:last-child {
-    margin-right: 0px;
+    padding-right: 0px;
 }
 .HeaderContainer > h2 {
     background-color: #34312D;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 .HeaderWrapper {
     width: 100vdw;

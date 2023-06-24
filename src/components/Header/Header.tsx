@@ -11,7 +11,7 @@ export default component$(() => {
                 <nav>
                     <a onClick$={() => nav("/projects")}>Projekte</a>
                     <a onClick$={() => nav("/contakt")}>Kontaktieren</a>
-                    <a href="https://github.com/kiire-development">GitHub</a>
+                    <a  href="https://github.com/kiire-development" target="_blank">GitHub</a>
                 </nav>
             </div>
         </div>
