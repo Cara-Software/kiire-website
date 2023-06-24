@@ -1,25 +1,4 @@
 
-/* Maus-Cursor */
-.cursor {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    transition: transform 0.1s ease;
-    pointer-events: none;
-    background-color: #7E7F83;
-    position: fixed;
-    z-index: 100;
-}
-a:hover + .cursor {
-    width: 30px;
-    height: 30px;
-    border-radius: 25%;
-}
-@media (max-width: 800px) {
-    .cursor {
-        display: none;
-    }
-}
 /* First-Section */
 .first-section {
     height: 100vh;

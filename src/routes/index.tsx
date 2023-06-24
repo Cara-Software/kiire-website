@@ -1,55 +1,14 @@
-import { $, component$, useOnWindow, useStyles$, useVisibleTask$, } from '@builder.io/qwik';
+import { component$,  useStyles$, } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import styles from "./style.css?inline"
 
 
 export default component$(() => {
-  useOnWindow("mousemove", $((event) => {
-    const cursor = document.getElementById("cursor") as HTMLElement
-
-    cursor.style.transform = `translate(${(event as MouseEvent).x - 10}px, ${(event as MouseEvent).y - 10}px)`;
-  }))
-
-  useVisibleTask$(() => {
-    const a = document.querySelectorAll("a")
-    const text = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6") 
-    const cursor = document.getElementById("cursor") as HTMLElement
-    a.forEach((a) => {
-      a.addEventListener("mousemove", () => {
-        cursor.style.backgroundColor = "transparent"
-        cursor.style.border = "solid 2px #7E7F83"
-        cursor.style.width = "30px"
-        cursor.style.height = "30px"
-        cursor.style.transition = "all 0.3s ease"
-      })
-      a.addEventListener("mouseleave", () => {
-        cursor.style.backgroundColor = "#7E7F83"
-        cursor.style.border = "none"
-        cursor.style.width = "20px"
-        cursor.style.height = "20px"
-        cursor.style.transition = "all 0.1s ease"
-      })
-    })
-
-    text.forEach((text) => {
-      text.addEventListener("mousemove", () => {
-        cursor.style.backgroundColor = "transparent"
-        cursor.style.border = "solid 2px #7E7F83"
-      })
-      text.addEventListener("mouseleave", () => {
-        cursor.style.backgroundColor = "#7E7F83"
-        cursor.style.border = "none"
-      })
-    })
-  })
- 
+  
   useStyles$(styles)
   return (
     <div  class="container">
-      {/* Mause Cursor */}
-      <div style={{}} class="cursor" id='cursor'>
-
-      </div>
+      
       {/* first section */}
       <div class="first-section">
         <h2>Hey ✌️, wir sind <a target='_blanc' href="https://github.com/kiire-development">kiire</a>.</h2>
