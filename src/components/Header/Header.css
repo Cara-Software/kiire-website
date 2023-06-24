@@ -1,8 +1,11 @@
 .HeaderContainer {
     display: flex;
     justify-content: center;
-    
+    height: 3vh;
     align-items: center;
+    z-index: 10000;
+    border-radius: 5px;
+    border: 1px solid #7E7F83;
     padding: 20px;
     background-color: #34312D;
     position: fixed;
@@ -10,7 +13,19 @@
 }
 .HeaderContainer > nav a {
     background-color: #34312D;
+    margin-right: 20px;
+}
+.HeaderContainer > nav a:last-child {
+    margin-right: 0px;
 }
 .HeaderContainer > h2 {
     background-color: #34312D;
+    margin-right: 20px;
+}
+.HeaderWrapper {
+    width: 100vdw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -7,7 +7,7 @@
     pointer-events: none;
     background-color: #7E7F83;
     position: fixed;
-    z-index: 100;
+    z-index: 1000000;
 }
 a:hover + .cursor {
     width: 30px;

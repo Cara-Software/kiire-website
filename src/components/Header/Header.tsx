@@ -5,13 +5,15 @@ export default component$(() => {
     useStyles$(styles)
     const nav = useNavigate()
     return (
-        <div class="HeaderContainer">
-            <h2>kiire</h2>
-            <nav>
-                <a onClick$={() => nav("/projects")}>Projekte</a>
-                <a onClick$={() => nav("/contakt")}>Kontaktieren</a>
-                <a href="https://github.com/kiire-development">GitHub</a>
-            </nav>
+        <div class="HeaderWrapper">
+            <div class="HeaderContainer">
+                <h2>kiire</h2>
+                <nav>
+                    <a onClick$={() => nav("/projects")}>Projekte</a>
+                    <a onClick$={() => nav("/contakt")}>Kontaktieren</a>
+                    <a href="https://github.com/kiire-development">GitHub</a>
+                </nav>
+            </div>
         </div>
     )
 })
