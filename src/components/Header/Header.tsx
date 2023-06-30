@@ -1,6 +1,7 @@
 import { component$, useStyles$ } from "@builder.io/qwik";
 import { useNavigate } from "@builder.io/qwik-city";
 import styles from "./Header.css?inline"
+import {UserTab} from "./UserTab"
 export default component$(() => {
     useStyles$(styles)
     const nav = useNavigate()
@@ -14,6 +15,7 @@ export default component$(() => {
                     <a  href="https://github.com/kiire-development" target="_blank">GitHub</a>
                 </nav>
             </div>
+            <UserTab />
         </div>
     )
 })
