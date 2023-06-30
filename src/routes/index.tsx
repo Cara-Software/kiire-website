@@ -103,7 +103,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'kiire ist ein Softwareunternehmen, was Software aller Art aus Deutschland produziert. Dabei haben wir einen Fuß in der Appentwicklung, Desktopentwicklung, und auch Minecraftmods-Entwicklung.',
     },
   ],
 };
