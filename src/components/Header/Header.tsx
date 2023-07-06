@@ -7,10 +7,10 @@ export default component$(() => {
     const nav = useNavigate()
     return (
         <div class="HeaderWrapper">
-            <div class="HeaderContainer">
+            <div class="HeaderContainer ">
                 <h2>kiire</h2>
                 <nav>
-                    <a onClick$={() => nav("/projects")}>Projekte</a>
+                    <a  onClick$={() => nav("/projects")}>Projekte</a>
                     <a onClick$={() => nav("/contakt")}>Kontaktieren</a>
                     <a  href="https://github.com/kiire-development" target="_blank">GitHub</a>
                 </nav>
