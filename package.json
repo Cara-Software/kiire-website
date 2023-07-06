@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@builder.io/qwik-react": "^0.5.0",
-    "framer-motion": "^10.12.18"
+    "framer-motion": "^10.12.18",
+    "unocss": "^0.53.4"
   }
 }
