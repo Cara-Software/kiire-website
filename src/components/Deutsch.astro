@@ -1,0 +1,15 @@
+---
+
+---
+
+<main id="main">
+  <slot />
+  <script>
+    const mainView = document.getElementById("main");
+    if (navigator.language == "de-DE") {
+      mainView!.style.display = "block";
+    } else {
+      mainView!.style.display = "none";
+    }
+  </script>
+</main>
