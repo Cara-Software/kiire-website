@@ -1,5 +1,9 @@
 ---
-const className = Astro.props.className;
+interface Props {
+  /**Hier wird CSS reingeschrieben, in einen String */
+  styleString?: string
+}
+const styleString = Astro.props.styleString;
 ---
 
 <script>
@@ -11,6 +15,8 @@ const className = Astro.props.className;
   }
 </script>
 
-<main id="mainDeutsch" class="flex">
-  <slot />
+<main id="mainDeutsch" >
+  <div  style={styleString || ""}>
+    <slot />
+  </div>
 </main>

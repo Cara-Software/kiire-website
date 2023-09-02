@@ -1,0 +1,24 @@
+---
+interface Props {
+  /**Hier wird CSS reingeschrieben, in einen String */
+  styleString?: string
+}
+const styleString = Astro.props.styleString;
+
+const language = localStorage.getItem("language");
+
+const id = `main_${language}`;
+
+if (language != "de") {
+  document.getElementById("main_en")!.style.display = "block";
+} else {
+  document.getElementById("main_en")!.style.display = "none";
+  document.getElementById("main_de")!.style.display = "block";
+}
+---
+
+<main id={id} >
+  <div  style={styleString || ""}>
+    <slot />
+  </div>
+</main>

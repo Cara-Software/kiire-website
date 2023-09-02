@@ -3,20 +3,26 @@ import { animate } from 'motion';
 import Layout from '../layouts/Layout.astro';
 import Deutsch from '../components/Deutsch.astro';
 import Englisch from '../components/Englisch.astro';
+
 ---
 
 <Layout title="Home | qlick">
 	<main>
 		<section id="hero" class="h-screen flex items-center justify-center">
-			<Deutsch className="flex items-center justify-center">
-					<h2>qlick</h2>
-					<p>Software development Firma aus Deutschland.</p>
+			<Deutsch styleString='display: flex; align-items: center; justify-content:  center; flex-direction: column;'>
+				<h2 class="text-blue-500 dark:text-white text-5xl hover:text-fuchsia-700 transition cursor-pointer h2-animation">
+					<a href="https://qlick.dev/" target="_blank" class="no-underline">qlick</a>
+				</h2>
+				<p class="text-blue-500 dark:text-white">Software development Firma aus Deutschland.</p>
 			</Deutsch>
-			<Englisch>
+			<Englisch styleString='display: flex; align-items: center; justify-content:  center; flex-direction: column;'>
 				<h2>qlick</h2>
 				<p>Software development Firma based in Germany.</p>
 			</Englisch>
 		</section>
 	</main>
+	<script define:vars={animate}>
+		console.log(animate(".h2-animation", { x: 100 }, { duration: 1 }))
+	</script>
 </Layout>
 
