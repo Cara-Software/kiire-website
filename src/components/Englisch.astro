@@ -1,12 +1,16 @@
+---
+const className = Astro.props.className
+---
 
-<main id="main">
-    <slot />
-    <script>
-      const mainView = document.getElementById("main");
-      if (navigator.language != "de-DE") {
-        mainView!.style.display = "block";
-      } else {
-        mainView!.style.display = "none";
-      }
-    </script>
-  </main>
+<script>
+  const mainViewEnglisch = document.getElementById("mainEnglisch");
+  if (navigator.language != "de-DE") {
+    mainViewEnglisch!.style.display = "block";
+  } else {
+    mainViewEnglisch!.style.display = "none";
+  }
+</script>
+
+<main id="mainEnglisch" class="flex">
+  <slot />
+</main>

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind variants;
+@tailwind utilities;
+
+:global(.child-component) {
+  @apply flex;
+}
