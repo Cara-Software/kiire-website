@@ -1,7 +1,18 @@
 ---
-const className = Astro.props.className
+interface Props {
+  /**Hier wird CSS reingeschrieben, in einen String */
+  styleString?: string
+}
+const styleString = Astro.props.styleString;
 ---
 
+
+
+<main id="mainEnglisch" >
+  <div  style={styleString || ""}>
+    <slot />
+  </div>
+</main>
 <script>
   const mainViewEnglisch = document.getElementById("mainEnglisch");
   if (navigator.language != "de-DE") {
@@ -10,7 +21,3 @@ const className = Astro.props.className
     mainViewEnglisch!.style.display = "none";
   }
 </script>
-
-<main id="mainEnglisch" class="flex">
-  <slot />
-</main>

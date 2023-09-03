@@ -1,9 +1,8 @@
 --- 
 interface Props {
-	
 	title: string;
 }
-
+import Header from "../components/Header.astro";
 const { title } = Astro.props;
 let language = "en"
 import "../styles/global.css"
@@ -19,7 +18,8 @@ import "../styles/global.css"
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-white dark:bg-zinc-800 ">
+		<Header />
 		<slot />
 	</body>
 </html>
@@ -27,20 +27,4 @@ import "../styles/global.css"
 	@tailwind base;
 	@tailwind utilities;
 	@tailwind variants;
-
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151A;
-		background-size: 224px;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
 </style>
